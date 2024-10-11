@@ -1,4 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block content %} 
+    <h1 style="font-size: 42px; text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000; font-family: 'Segoe Print'; color: #FF9933;">
+  Table de Pythagore </h1>
+ {{ table|raw }} 
+{% endblock %}
 
