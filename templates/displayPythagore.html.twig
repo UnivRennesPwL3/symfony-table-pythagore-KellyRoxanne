@@ -1,4 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block content %}
+<style>
+        #content {
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 42px;
+            text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+            font-family: 'Segoe Print';
+            color: #FF9933;
+            text-align: center;
+        }
 
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            text-align: center;
+        }
+        
+    </style>
+        {{ table|raw }}
+{% endblock %}
